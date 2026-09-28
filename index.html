@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valli Raj Diagnostic Center | Fast WhatsApp Bookings & Reliable Reports</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Inter & Outfit) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        medical: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                            700: '#0f766e',
+                            800: '#115e59',
+                            900: '#134e4a',
+                        },
+                        whatsapp: {
+                            500: '#25D366',
+                            600: '#128C7E',
+                            700: '#075E54'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-pattern {
+            background-color: #0f172a;
+            background-image: radial-gradient(#14b8a6 0.75px, transparent 0.75px), radial-gradient(#14b8a6 0.75px, #0f172a 0.75px);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 font-sans text-slate-800 antialiased selection:bg-medical-500 selection:text-white">
+
+    <div class="bg-slate-950 text-slate-200 text-xs sm:text-sm py-2 px-4 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-4">
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-clock text-medical-500"></i> Working Hours: Mon-Sat: 7:00 AM - 9:00 PM | Sun: 7:00 AM - 1:00 PM</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="https://wa.me/919876543210?text=Hi%2C%20I%20have%20an%20inquiry%20regarding%20diagnostic%20tests." target="_blank" class="hover:text-whatsapp-500 transition-colors flex items-center gap-1.5 font-medium text-whatsapp-500">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp Support
+                </a>
+                <span class="text-slate-700">|</span>
+                <a href="tel:18001234567" class="hover:text-medical-500 transition-colors flex items-center gap-1.5 font-medium">
+                    <i class="fa-solid fa-phone-volume text-rose-400 animate-pulse"></i> Helpline: 1800-123-4567
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center space-x-3 group">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-medical-700 to-medical-500 flex items-center justify-center text-white text-2xl font-bold shadow-lg shadow-medical-500/20 group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-microscope"></i>
+                    </div>
+                    <div>
+                        <span class="font-heading font-extrabold text-2xl text-slate-900 tracking-tight block leading-none">VALLI RAJ</span>
+                        <span class="text-xs font-semibold uppercase tracking-widest text-medical-600">Diagnostic Center</span>
+                    </div>
+                </a>
+
+                <!-- Navigation Links -->
+                <nav class="hidden lg:flex items-center space-x-8 font-medium text-slate-700 text-sm">
+                    <a href="#home" class="hover:text-medical-600 transition-colors">Home</a>
+                    <a href="#about" class="hover:text-medical-600 transition-colors">About Us</a>
+                    <a href="#services" class="hover:text-medical-600 transition-colors">Services & Tests</a>
+                    <a href="#packages" class="hover:text-medical-600 transition-colors">Health Packages</a>
+                    <a href="#reports" class="hover:text-medical-600 transition-colors flex items-center gap-1.5 text-slate-900 font-semibold bg-slate-100 px-3 py-1.5 rounded-lg border border-slate-200"><i class="fa-solid fa-file-invoice text-medical-600"></i> Download Report</a>
+                    <a href="#contact" class="hover:text-medical-600 transition-colors">Contact</a>
+                </nav>
+
+                <!-- Header Actions -->
+                <div class="hidden lg:flex items-center space-x-3">
+                    <a href="javascript:void(0)" onclick="openDirectWhatsApp('General Diagnostic Inquiry')" class="bg-whatsapp-500 hover:bg-whatsapp-600 text-white px-4 py-2.5 rounded-xl font-semibold text-sm shadow-md transition-all flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Quick Chat
+                    </a>
+                    <a href="#appointment" class="bg-slate-900 hover:bg-slate-800 text-white px-5 py-2.5 rounded-xl font-semibold text-sm shadow-md transition-all flex items-center gap-2">
+                        <i class="fa-regular fa-calendar-check text-medical-400"></i> Book Test
+                    </a>
+                </div>
+
+                <!-- Mobile Navigation Button -->
+                <div class="lg:hidden flex items-center space-x-2">
+                    <a href="javascript:void(0)" onclick="openDirectWhatsApp('General Diagnostic Inquiry')" class="p-2.5 bg-whatsapp-500 text-white rounded-xl">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                    </a>
+                    <button id="mobile-menu-btn" class="p-2.5 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden border-b border-slate-200 bg-white px-4 pt-2 pb-6 space-y-3">
+            <a href="#home" class="block py-2 text-slate-800 font-medium hover:text-medical-600">Home</a>
+            <a href="#about" class="block py-2 text-slate-800 font-medium hover:text-medical-600">About Us</a>
+            <a href="#services" class="block py-2 text-slate-800 font-medium hover:text-medical-600">Services & Tests</a>
+            <a href="#packages" class="block py-2 text-slate-800 font-medium hover:text-medical-600">Health Packages</a>
+            <a href="#reports" class="block py-2 text-medical-700 font-medium">Download Report</a>
+            <a href="#contact" class="block py-2 text-slate-800 font-medium hover:text-medical-600">Contact</a>
+            <div class="pt-2 space-y-2">
+                <a href="#appointment" class="w-full text-center bg-slate-900 text-white block py-3 rounded-xl font-semibold shadow">Book Appointment</a>
+                <a href="javascript:void(0)" onclick="openDirectWhatsApp('General Inquiry from Mobile Menu')" class="w-full text-center bg-whatsapp-500 text-white block py-3 rounded-xl font-semibold shadow flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="relative bg-slate-900 text-white overflow-hidden py-16 lg:py-24">
+        <div class="absolute inset-0 opacity-20 hero-pattern pointer-events-none"></div>
+        <div class="absolute -right-20 -top-20 w-96 h-96 bg-medical-500/20 rounded-full blur-3xl"></div>
+        <div class="absolute -left-20 -bottom-20 w-96 h-96 bg-whatsapp-500/10 rounded-full blur-3xl"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Hero Text -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-whatsapp-500/10 border border-whatsapp-500/30 text-whatsapp-400 text-xs sm:text-sm font-semibold">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Instant Booking Confirmation via WhatsApp
+                    </div>
+                    <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
+                        Precision Diagnostics Delivered With <span class="text-transparent bg-clip-text bg-gradient-to-r from-medical-400 to-emerald-400">Instant Speed</span>
+                    </h1>
+                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        High-precision Pathology, 3T MRI Imaging, CT Scans & Cardiology. Book online and get instant booking updates and digital reports directly on WhatsApp.
+                    </p>
+
+                    <!-- Key Badges -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-2">
+                        <div class="p-3 rounded-xl bg-slate-800/80 border border-slate-700/60 text-center">
+                            <i class="fa-solid fa-vial text-medical-400 text-xl mb-1"></i>
+                            <p class="text-xs font-semibold text-slate-200">100% Accurate</p>
+                        </div>
+                        <div class="p-3 rounded-xl bg-slate-800/80 border border-slate-700/60 text-center">
+                            <i class="fa-solid fa-house-medical text-whatsapp-400 text-xl mb-1"></i>
+                            <p class="text-xs font-semibold text-slate-200">Free Home Pickup</p>
+                        </div>
+                        <div class="p-3 rounded-xl bg-slate-800/80 border border-slate-700/60 text-center">
+                            <i class="fa-solid fa-bolt text-medical-400 text-xl mb-1"></i>
+                            <p class="text-xs font-semibold text-slate-200">Same-Day Reports</p>
+                        </div>
+                        <div class="p-3 rounded-xl bg-slate-800/80 border border-slate-700/60 text-center">
+                            <i class="fa-solid fa-award text-emerald-400 text-xl mb-1"></i>
+                            <p class="text-xs font-semibold text-slate-200">NABL Accredited</p>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#appointment" class="w-full sm:w-auto bg-medical-500 hover:bg-medical-600 text-slate-950 font-bold px-7 py-4 rounded-xl shadow-lg shadow-medical-500/25 transition-all text-center flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-calendar-day"></i> Book Test / Home Visit
+                        </a>
+                        <a href="javascript:void(0)" onclick="openDirectWhatsApp('Inquiry for Health Checkup Packages')" class="w-full sm:w-auto bg-whatsapp-600 hover:bg-whatsapp-700 text-white font-semibold px-7 py-4 rounded-xl shadow-lg shadow-whatsapp-600/20 transition-all text-center flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-xl"></i> Chat On WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Quick Booking Widget -->
+                <div class="lg:col-span-5">
+                    <div class="bg-white rounded-2xl p-6 sm:p-8 text-slate-800 shadow-2xl border border-slate-100 relative">
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <h3 class="font-heading text-2xl font-bold text-slate-900">Quick WhatsApp Booking</h3>
+                                <p class="text-xs text-slate-500 mt-0.5">Send details directly to lab reception via WhatsApp.</p>
+                            </div>
+                            <div class="w-10 h-10 bg-whatsapp-500/10 text-whatsapp-600 rounded-xl flex items-center justify-center text-2xl">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                        </div>
+                        
+                        <form id="hero-quick-form" onsubmit="handleQuickBookingWhatsApp(event)" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">Full Name *</label>
+                                <input type="text" id="hero-name" required placeholder="John Doe" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-whatsapp-500 outline-none text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">Phone Number *</label>
+                                <input type="tel" id="hero-phone" required placeholder="98765 43210" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-whatsapp-500 outline-none text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">Select Service or Test *</label>
+                                <select id="hero-service" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-whatsapp-500 outline-none text-sm bg-white">
+                                    <option>Full Body Master Care Package</option>
+                                    <option>3T MRI Scan</option>
+                                    <option>128-Slice CT Scan</option>
+                                    <option>Pathology / Blood Test</option>
+                                    <option>Cardiology (ECG / ECHO / TMT)</option>
+                                    <option>Home Sample Collection</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="w-full bg-whatsapp-500 hover:bg-whatsapp-600 text-white font-bold py-3.5 rounded-xl shadow-md transition duration-200 text-sm flex items-center justify-center gap-2">
+                                <i class="fa-brands fa-whatsapp text-lg"></i> Confirm Booking On WhatsApp
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-medical-600 font-bold text-sm tracking-widest uppercase">Why Valli Raj Diagnostics</span>
+                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Uncompromising Quality & Patient Convenience</h2>
+                <div class="w-16 h-1 bg-medical-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature 1 -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-medical-200 hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-whatsapp-500/10 rounded-xl flex items-center justify-center text-whatsapp-600 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-slate-900 mb-2">WhatsApp Reports</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        No need to travel twice! Receive verified digital PDF test reports directly on your WhatsApp as soon as tests are validated.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-medical-200 hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-medical-100 rounded-xl flex items-center justify-center text-medical-700 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-slate-900 mb-2">Certified Pathologists</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Team of experienced radiologists, pathologists, and certified lab technologists providing meticulous diagnostic precision.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-medical-200 hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-medical-100 rounded-xl flex items-center justify-center text-medical-700 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-truck-medical"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-slate-900 mb-2">Doorstep Collection</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Hygienic, temperature-controlled sample collection right from your home at your chosen time slot.
+                    </p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-medical-200 hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-medical-100 rounded-xl flex items-center justify-center text-medical-700 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-laptop-medical"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-slate-900 mb-2">Automated Tech</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Fully automated blood analyzers and high-definition imaging equipment ensuring maximum analytical accuracy.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-medical-600 font-bold text-sm tracking-widest uppercase">Comprehensive Directory</span>
+                    <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Diagnostic Tests & Radiology Scans</h2>
+                </div>
+                <!-- Test Search Bar -->
+                <div class="mt-4 md:mt-0 w-full md:w-80">
+                    <div class="relative">
+                        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3.5 text-slate-400"></i>
+                        <input type="text" id="test-search" onkeyup="filterTests()" placeholder="Search test e.g. MRI, Blood, CBC..." class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-medical-500 outline-none text-sm shadow-sm bg-white">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filter Categories -->
+            <div class="flex flex-wrap gap-2 mb-8 border-b border-slate-200 pb-4">
+                <button onclick="setFilter('all')" class="filter-btn active-tab px-5 py-2.5 rounded-xl font-semibold text-sm transition-all bg-medical-700 text-white shadow-md">All Tests</button>
+                <button onclick="setFilter('radiology')" class="filter-btn px-5 py-2.5 rounded-xl font-semibold text-sm transition-all bg-white text-slate-700 hover:bg-slate-200">Radiology & Imaging</button>
+                <button onclick="setFilter('pathology')" class="filter-btn px-5 py-2.5 rounded-xl font-semibold text-sm transition-all bg-white text-slate-700 hover:bg-slate-200">Pathology & Lab</button>
+                <button onclick="setFilter('cardiology')" class="filter-btn px-5 py-2.5 rounded-xl font-semibold text-sm transition-all bg-white text-slate-700 hover:bg-slate-200">Cardiology</button>
+            </div>
+
+            <!-- Tests Grid -->
+            <div id="tests-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Test Item 1 -->
+                <div class="test-card bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-category="radiology" data-name="3T MRI Scan">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2.5 py-1 rounded-md uppercase">Radiology</span>
+                            <span class="text-xs text-slate-500 font-medium"><i class="fa-regular fa-clock"></i> 30 Mins</span>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl text-slate-900 mb-1">3T MRI Scan</h3>
+                        <p class="text-slate-500 text-xs mb-4">High-definition tissue imaging for Brain, Spine, Joints & Abdomen.</p>
+                        <div class="text-xs text-slate-600 space-y-1 mb-6">
+                            <p><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Fasting: Optional</p>
+                            <p><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Digital Report on WhatsApp</p>
+                        </div>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between gap-2">
+                        <div>
+                            <span class="text-xs text-slate-400 line-through">₹6,500</span>
+                            <span class="font-heading font-extrabold text-lg text-slate-900 block">₹4,999</span>
+                        </div>
+                        <button onclick="openDirectWhatsApp('Inquiry to book 3T MRI Scan (₹4,999)')" class="bg-whatsapp-500 hover:bg-whatsapp-600 text-white font-bold text-xs px-3.5 py-2.5 rounded-xl transition flex items-center gap-1.5">
+                            <i class="fa-brands fa-whatsapp text-sm"></i> Book Test
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Test Item 2 -->
+                <div class="test-card bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-category="pathology" data-name="Complete Blood Count (CBC)">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded-md uppercase">Pathology</span>
+                            <span class="text-xs text-slate-500 font-medium"><i class="fa-regular fa-clock"></i> Same Day</span>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl text-slate-900 mb-1">Complete Blood Count (CBC)</h3>
+                        <p class="text-slate-500 text-xs mb-4">Measures RBCs, WBCs, Platelets, Hemoglobin & Hematocrit levels.</p>
+                        <div class="text-xs text-slate-600 space-y-1 mb-6">
+                            <p><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Free Home Sample Pickup</p>
+                            <p><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> WhatsApp Report in 6 Hours</p>
+                        </div>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between gap-2">
+                        <div>
+                            <span class="text-xs text-slate-400 line-through">₹500</span>
+                            <span class="font-heading font-extrabold text-lg text-slate-900 block">₹349</span>
+                        </div>
+                        <button onclick="openDirectWhatsApp('Inquiry to book Complete Blood Count - CBC (₹349)')" class="bg-whatsapp-500 hover:bg-whatsapp-600 text-white font-bold text-xs px-3.5 py-2.5 rounded-xl transition flex items-center gap-1.5">
+                            <i class="fa-brands fa-whatsapp text-sm"></i> Book Test
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Test Item 3 -->
+                <div class="test-card bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-category="cardiology" data-name="2D Echo Cardiogram">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="bg-rose-100 text-rose-800 text-xs font-bold px-2.5 py-1 rounded-md uppercase">Cardiology</span>
+                            <span class="text-xs text-slate-500 font-medium"><i class="fa-regular fa-clock"></i> 20 Mins</span>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl text-slate-900 mb-1">2D Echo Cardiogram</h3>
+                        <p class="text-slate-500 text-xs mb-4">Ultrasound visualization of cardiac chambers, valves, and blood flow.</p>
+                        <div class="text-xs text-slate-600 space-y-1 mb-6">
+                            <p><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Senior Cardiologist Reviewed</p>
+                            <p><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Instant Printout & PDF</p>
+                        </div>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between gap-2">
+                        <div>
+                            <span class="text-xs text-slate-400 line-through">₹2,800</span>
+                            <span class="font-heading font-extrabold text-lg text-slate-900 block">₹1,999</span>
+                        </div>
+                        <button onclick="openDirectWhatsApp('Inquiry to book 2D Echo Cardiogram (₹1,999)')" class="bg-whatsapp-500 hover:bg-whatsapp-600 text-white font-bold text-xs px-3.5 py-2.5 rounded-xl transition flex items-center gap-1.5">
+                            <i class="fa-brands fa-whatsapp text-sm"></i> Book Test
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Test Item 4 -->
+                <div class="test-card bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-category="radiology" data-name="128-Slice CT Scan">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2.5 py-1 rounded-md uppercase">Radiology</span>
+                            <span class="text-xs text-slate-500 font-medium"><i class="fa-regular fa-clock"></i> 15 Mins</span>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl text-slate-900 mb-1">128-Slice CT Scan</h3>
+                        <p class="text-slate-500 text-xs mb-4">Ultra-fast cross-sectional imaging for organ and bone evaluations.</p>
+                        <div class="text-xs text-slate-600 space-y-1 mb-6">
+                            <p><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Low Radiation Protocol</p>
+                            <p><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> 3D Image Reconstruction</p>
+                        </div>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between gap-2">
+                        <div>
+                            <span class="text-xs text-slate-400 line-through">₹4,200</span>
+                            <span class="font-heading font-extrabold text-lg text-slate-900 block">₹3,200</span>
+                        </div>
+                        <button onclick="openDirectWhatsApp('Inquiry to book 128-Slice CT Scan (₹3,200)')" class="bg-whatsapp-500 hover:bg-whatsapp-600 text-white font-bold text-xs px-3.5 py-2.5 rounded-xl transition flex items-center gap-1.5">
+                            <i class="fa-brands fa-whatsapp text-sm"></i> Book Test
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Test Item 5 -->
+                <div class="test-card bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-category="pathology" data-name="Comprehensive Liver/Kidney Panel">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded-md uppercase">Pathology</span>
+                            <span class="text-xs text-slate-500 font-medium"><i class="fa-regular fa-clock"></i> 12 Hours</span>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl text-slate-900 mb-1">Liver & Kidney Panel</h3>
+                        <p class="text-slate-500 text-xs mb-4">Evaluates liver enzymes, kidney filtration, electrolytes, and proteins.</p>
+                        <div class="text-xs text-slate-600 space-y-1 mb-6">
+                            <p><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Fasting: 10 Hours Required</p>
+                            <p><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Free Home Sample Collection</p>
+                        </div>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between gap-2">
+                        <div>
+                            <span class="text-xs text-slate-400 line-through">₹1,800</span>
+                            <span class="font-heading font-extrabold text-lg text-slate-900 block">₹1,199</span>
+                        </div>
+                        <button onclick="openDirectWhatsApp('Inquiry to book Liver %26 Kidney Panel (₹1,199)')" class="bg-whatsapp-500 hover:bg-whatsapp-600 text-white font-bold text-xs px-3.5 py-2.5 rounded-xl transition flex items-center gap-1.5">
+                            <i class="fa-brands fa-whatsapp text-sm"></i> Book Test
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Test Item 6 -->
+                <div class="test-card bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-category="cardiology" data-name="Treadmill Test (TMT)">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="bg-rose-100 text-rose-800 text-xs font-bold px-2.5 py-1 rounded-md uppercase">Cardiology</span>
+                            <span class="text-xs text-slate-500 font-medium"><i class="fa-regular fa-clock"></i> 45 Mins</span>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl text-slate-900 mb-1">Cardiac Stress Test (TMT)</h3>
+                        <p class="text-slate-500 text-xs mb-4">Evaluates heart performance during controlled treadmill exercise.</p>
+                        <div class="text-xs text-slate-600 space-y-1 mb-6">
+                            <p><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Physician Supervised</p>
+                            <p><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Real-time ECG Analysis</p>
+                        </div>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between gap-2">
+                        <div>
+                            <span class="text-xs text-slate-400 line-through">₹2,200</span>
+                            <span class="font-heading font-extrabold text-lg text-slate-900 block">₹1,650</span>
+                        </div>
+                        <button onclick="openDirectWhatsApp('Inquiry to book Cardiac Stress Test TMT (₹1,650)')" class="bg-whatsapp-500 hover:bg-whatsapp-600 text-white font-bold text-xs px-3.5 py-2.5 rounded-xl transition flex items-center gap-1.5">
+                            <i class="fa-brands fa-whatsapp text-sm"></i> Book Test
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="packages" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-medical-600 font-bold text-sm tracking-widest uppercase">Preventive Checkups</span>
+                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Health Packages With Instant WhatsApp Booking</h2>
+                <p class="text-slate-600 mt-3 text-sm">Select a package to trigger a pre-formatted WhatsApp booking directly with our team.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Package 1 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 flex flex-col justify-between hover:shadow-xl transition-all">
+                    <div>
+                        <div class="w-12 h-12 bg-teal-100 text-teal-700 rounded-xl flex items-center justify-center text-xl font-bold mb-4">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl text-slate-900">Executive Health Shield</h3>
+                        <p class="text-xs text-slate-500 mb-4">65+ Key Body Parameters</p>
+                        
+                        <div class="space-y-2 text-xs text-slate-700 mb-6">
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-medical-600"></i> Full Lipid Profile</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-medical-600"></i> Kidney Function Test (KFT)</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-medical-600"></i> Liver Function Test (LFT)</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-medical-600"></i> Thyroid Screening (T3/T4/TSH)</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg-white p-3 rounded-xl border border-slate-200 mb-4">
+                            <span class="text-xs text-slate-400 line-through">₹3,500</span>
+                            <div class="flex items-baseline gap-2">
+                                <span class="font-heading text-2xl font-extrabold text-slate-900">₹1,499</span>
+                                <span class="text-xs font-bold text-emerald-600">57% OFF</span>
+                            </div>
+                        </div>
+                        <button onclick="openDirectWhatsApp('Hi, I am interested in booking the Executive Health Shield Package (₹1,499).')" class="w-full bg-whatsapp-500 hover:bg-whatsapp-600 text-white font-bold py-3 rounded-xl text-xs transition flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-base"></i> Book Package On WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Package 2 Popular -->
+                <div class="bg-slate-900 text-white rounded-2xl p-6 border-2 border-whatsapp-500 flex flex-col justify-between shadow-xl relative transform lg:-translate-y-2">
+                    <span class="absolute -top-3 right-6 bg-whatsapp-500 text-slate-950 text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Most Popular</span>
+                    <div>
+                        <div class="w-12 h-12 bg-whatsapp-500/20 text-whatsapp-400 rounded-xl flex items-center justify-center text-xl font-bold mb-4">
+                            <i class="fa-solid fa-shield-virus"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl text-white">Full Body Master Care</h3>
+                        <p class="text-xs text-slate-400 mb-4">88+ Key Body Parameters</p>
+                        
+                        <div class="space-y-2 text-xs text-slate-300 mb-6">
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-whatsapp-400"></i> Everything in Executive Shield</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-whatsapp-400"></i> Vitamin D3 & B12 Screening</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-whatsapp-400"></i> HbA1c & Fasting Glucose</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-whatsapp-400"></i> Chest X-Ray & ECG</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg-slate-800 p-3 rounded-xl border border-slate-700 mb-4">
+                            <span class="text-xs text-slate-500 line-through">₹5,999</span>
+                            <div class="flex items-baseline gap-2">
+                                <span class="font-heading text-2xl font-extrabold text-white">₹2,799</span>
+                                <span class="text-xs font-bold text-emerald-400">53% OFF</span>
+                            </div>
+                        </div>
+                        <button onclick="openDirectWhatsApp('Hi, I am interested in booking the Full Body Master Care Package (₹2,799).')" class="w-full bg-whatsapp-500 hover:bg-whatsapp-400 text-slate-950 font-bold py-3 rounded-xl text-xs transition flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-base"></i> Book Package On WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 flex flex-col justify-between hover:shadow-xl transition-all">
+                    <div>
+                        <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center text-xl font-bold mb-4">
+                            <i class="fa-solid fa-person-cane"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl text-slate-900">Senior Citizen Care</h3>
+                        <p class="text-xs text-slate-500 mb-4">75+ Parameters for Age 60+</p>
+                        
+                        <div class="space-y-2 text-xs text-slate-700 mb-6">
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-medical-600"></i> Advanced Cardiac Risk Markers</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-medical-600"></i> Bone Health & Calcium Level</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-medical-600"></i> Complete Arthritis Panel</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-medical-600"></i> Ultrasound Abdomen Scan</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg-white p-3 rounded-xl border border-slate-200 mb-4">
+                            <span class="text-xs text-slate-400 line-through">₹4,800</span>
+                            <div class="flex items-baseline gap-2">
+                                <span class="font-heading text-2xl font-extrabold text-slate-900">₹2,299</span>
+                                <span class="text-xs font-bold text-emerald-600">52% OFF</span>
+                            </div>
+                        </div>
+                        <button onclick="openDirectWhatsApp('Hi, I am interested in booking the Senior Citizen Care Package (₹2,299).')" class="w-full bg-whatsapp-500 hover:bg-whatsapp-600 text-white font-bold py-3 rounded-xl text-xs transition flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-base"></i> Book Package On WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Package 4 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 flex flex-col justify-between hover:shadow-xl transition-all">
+                    <div>
+                        <div class="w-12 h-12 bg-amber-100 text-amber-700 rounded-xl flex items-center justify-center text-xl font-bold mb-4">
+                            <i class="fa-solid fa-cubes-stacked"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl text-slate-900">Diabetes Care Plan</h3>
+                        <p class="text-xs text-slate-500 mb-4">Targeted Metabolic Screening</p>
+                        
+                        <div class="space-y-2 text-xs text-slate-700 mb-6">
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-medical-600"></i> HbA1c (Glycated Hemoglobin)</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-medical-600"></i> Fasting & PP Blood Sugar</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-medical-600"></i> Urine Microalbumin Test</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-medical-600"></i> Lipid & Kidney Function</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg-white p-3 rounded-xl border border-slate-200 mb-4">
+                            <span class="text-xs text-slate-400 line-through">₹2,100</span>
+                            <div class="flex items-baseline gap-2">
+                                <span class="font-heading text-2xl font-extrabold text-slate-900">₹999</span>
+                                <span class="text-xs font-bold text-emerald-600">52% OFF</span>
+                            </div>
+                        </div>
+                        <button onclick="openDirectWhatsApp('Hi, I am interested in booking the Diabetes Care Plan (₹999).')" class="w-full bg-whatsapp-500 hover:bg-whatsapp-600 text-white font-bold py-3 rounded-xl text-xs transition flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-base"></i> Book Package On WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="appointment" class="py-20 bg-slate-900 text-white relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-whatsapp-400 font-bold text-sm tracking-widest uppercase"><i class="fa-brands fa-whatsapp mr-1"></i> WhatsApp Assisted Booking</span>
+                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white mt-2">Book Appointment / Home Sample Collection</h2>
+                <p class="text-slate-400 text-sm mt-2">Fill in your details below to generate an instant structured WhatsApp appointment request.</p>
+            </div>
+
+            <!-- WhatsApp Instant Info Banner -->
+            <div class="bg-whatsapp-500/10 border border-whatsapp-500/30 rounded-2xl p-4 mb-8 flex items-center gap-4 text-xs text-slate-200">
+                <div class="w-10 h-10 bg-whatsapp-500 text-slate-950 rounded-xl flex items-center justify-center text-xl shrink-0 font-bold">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div>
+                    <strong class="text-whatsapp-400 text-sm font-bold block">How WhatsApp Booking Works:</strong>
+                    Submitting this form compiles your inputs into a formatted WhatsApp message to our reception line for immediate confirmation.
+                </div>
+            </div>
+
+            <form id="main-booking-form" onsubmit="handleMainBookingWhatsApp(event)" class="bg-slate-800 p-8 rounded-3xl border border-slate-700 shadow-2xl space-y-6">
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Patient Full Name *</label>
+                        <input type="text" id="booking-name" required placeholder="John Doe" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:ring-2 focus:ring-whatsapp-500 outline-none">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Mobile Phone Number *</label>
+                        <input type="tel" id="booking-phone" required placeholder="98765 43210" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:ring-2 focus:ring-whatsapp-500 outline-none">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Select Test / Health Package *</label>
+                        <select id="booking-service" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:ring-2 focus:ring-whatsapp-500 outline-none">
+                            <option value="">-- Choose Test or Package --</option>
+                            <option>3T MRI Scan</option>
+                            <option>128-Slice CT Scan</option>
+                            <option>2D Echo Cardiogram</option>
+                            <option>Complete Blood Count (CBC)</option>
+                            <option>Liver & Kidney Panel</option>
+                            <option>Executive Health Shield Package</option>
+                            <option>Full Body Master Care Package</option>
+                            <option>Senior Citizen Care Package</option>
+                            <option>Diabetes Care Plan</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Preferred Appointment Date *</label>
+                        <input type="date" id="booking-date" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:ring-2 focus:ring-whatsapp-500 outline-none">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Preferred Time Slot *</label>
+                        <select id="booking-time" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:ring-2 focus:ring-whatsapp-500 outline-none">
+                            <option>Morning (07:00 AM - 11:00 AM)</option>
+                            <option>Mid-Day (11:00 AM - 03:00 PM)</option>
+                            <option>Evening (03:00 PM - 07:00 PM)</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Additional Instructions / Notes</label>
+                        <input type="text" id="booking-notes" placeholder="Fasting status, age, special requests..." class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:ring-2 focus:ring-whatsapp-500 outline-none">
+                    </div>
+                </div>
+
+                <!-- Home Sample Pickup Address Toggle -->
+                <div class="p-4 bg-slate-900/70 rounded-2xl border border-slate-700">
+                    <label class="flex items-center space-x-3 cursor-pointer">
+                        <input type="checkbox" id="home-sample-checkbox" onchange="toggleHomeAddress()" class="w-5 h-5 rounded text-whatsapp-500 focus:ring-whatsapp-500 bg-slate-800 border-slate-600">
+                        <span class="text-sm font-semibold text-slate-200">Request Doorstep Home Sample Collection</span>
+                    </label>
+
+                    <div id="home-address-container" class="hidden mt-4">
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">Doorstep Address</label>
+                        <textarea id="home-address" rows="2" placeholder="House/Flat No., Street, Landmark, City & Pincode" class="w-full bg-slate-800 border border-slate-700 rounded-xl p-3 text-white text-sm outline-none focus:ring-2 focus:ring-whatsapp-500"></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="w-full bg-whatsapp-500 hover:bg-whatsapp-600 text-slate-950 font-extrabold py-4 rounded-xl shadow-lg transition duration-200 text-base flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-xl"></i> Confirm Appointment via WhatsApp
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <section id="reports" class="py-20 bg-slate-100">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl p-8 sm:p-12 shadow-xl border border-slate-200/80 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <div class="lg:col-span-6 space-y-4">
+                    <div class="w-12 h-12 bg-medical-100 text-medical-700 rounded-xl flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-file-medical-download"></i>
+                    </div>
+                    <h2 class="font-heading text-3xl font-extrabold text-slate-900">Patient Report Download</h2>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Search your diagnostic reports online or request our team to send your report PDF directly to your WhatsApp registered mobile number.
+                    </p>
+                    <div class="bg-whatsapp-50 border border-whatsapp-200 rounded-xl p-3 text-whatsapp-800 text-xs flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg text-whatsapp-600"></i> Reports are automatically delivered on WhatsApp upon lab verification.
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-200">
+                    <form onsubmit="handleReportSearch(event)" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Sample ID / Mobile Number</label>
+                            <input type="text" id="portal-id" required placeholder="e.g. VR-1029 or 9876543210" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-medical-500 outline-none text-sm bg-white">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Registration Date / DOB</label>
+                            <input type="date" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-medical-500 outline-none text-sm bg-white">
+                        </div>
+                        <button type="submit" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-3.5 rounded-xl shadow-md text-sm transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-magnifying-glass"></i> Search & Download PDF
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <span class="text-medical-600 font-bold text-sm tracking-widest uppercase">Reach Us</span>
+                        <h2 class="font-heading text-3xl font-extrabold text-slate-900 mt-1">Visit Or Contact Center</h2>
+                    </div>
+
+                    <div class="space-y-4 text-sm text-slate-700">
+                        <div class="flex items-start space-x-4 bg-slate-50 p-4 rounded-xl border border-slate-200">
+                            <div class="w-10 h-10 bg-whatsapp-500/10 text-whatsapp-600 rounded-lg flex items-center justify-center shrink-0 text-xl font-bold">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">WhatsApp Help Line</h4>
+                                <p class="text-slate-600 text-xs mt-1">+91 98765 43210 (Instant Replies)</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 bg-slate-50 p-4 rounded-xl border border-slate-200">
+                            <div class="w-10 h-10 bg-medical-100 text-medical-700 rounded-lg flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Main Center Address</h4>
+                                <p class="text-slate-600 text-xs mt-1">#45 Medical Enclave, Main Road, City Center - 500001</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 bg-slate-50 p-4 rounded-xl border border-slate-200">
+                            <div class="w-10 h-10 bg-medical-100 text-medical-700 rounded-lg flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Phone Helpline</h4>
+                                <p class="text-slate-600 text-xs mt-1">1800-123-4567 / 040 2345 6789</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map -->
+                <div class="lg:col-span-7">
+                    <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 h-full min-h-[320px] flex items-center justify-center relative overflow-hidden">
+                        <img src="https://placehold.co/800x450/0f172a/14b8a6?text=Center+Map+Location" alt="Map" class="w-full h-full object-cover rounded-xl">
+                        <div class="absolute bg-slate-900/90 text-white p-4 rounded-xl shadow-xl max-w-xs text-center border border-slate-700">
+                            <i class="fa-solid fa-location-crosshairs text-whatsapp-400 text-2xl mb-2"></i>
+                            <h4 class="font-bold text-sm">Valli Raj Diagnostic Center</h4>
+                            <p class="text-xs text-slate-300 mt-1">City Center, Main Road</p>
+                            <button onclick="openDirectWhatsApp('Hi, please send me directions to the diagnostic center.')" class="mt-3 bg-whatsapp-500 hover:bg-whatsapp-600 text-slate-950 font-bold text-xs px-4 py-2 rounded-lg transition">Get Directions on WhatsApp</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <a href="javascript:void(0)" onclick="openDirectWhatsApp('Hi! I need diagnostic assistance.')" class="fixed bottom-6 right-6 z-50 bg-whatsapp-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 hover:bg-whatsapp-600 transition-all group">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+        <span class="absolute right-16 bg-slate-900 text-white text-xs font-bold px-3 py-1.5 rounded-xl shadow-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity border border-slate-700">
+            Chat with Reception
+        </span>
+    </a>
+
+    <footer class="bg-slate-950 text-slate-400 text-sm py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-medical-700 to-medical-500 flex items-center justify-center text-white text-xl font-bold">
+                            <i class="fa-solid fa-microscope"></i>
+                        </div>
+                        <span class="font-heading font-extrabold text-xl text-white tracking-tight">VALLI RAJ</span>
+                    </div>
+                    <p class="text-xs leading-relaxed text-slate-400">
+                        NABL Accredited & ISO Certified Diagnostic Center offering fast WhatsApp booking & digital reports.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4 text-xs uppercase tracking-wider">Quick Links</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#home" class="hover:text-whatsapp-400 transition">Home</a></li>
+                        <li><a href="#services" class="hover:text-whatsapp-400 transition">Pathology & Imaging</a></li>
+                        <li><a href="#packages" class="hover:text-whatsapp-400 transition">Health Checkup Packages</a></li>
+                        <li><a href="#reports" class="hover:text-whatsapp-400 transition">Download Reports</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4 text-xs uppercase tracking-wider">Certifications</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><i class="fa-solid fa-check text-emerald-400 mr-1.5"></i> NABL Accredited</li>
+                        <li><i class="fa-solid fa-check text-emerald-400 mr-1.5"></i> ISO 9001:2015 Certified</li>
+                        <li><i class="fa-solid fa-check text-emerald-400 mr-1.5"></i> Safe Home Sample Collection</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4 text-xs uppercase tracking-wider">Direct WhatsApp Chat</h4>
+                    <button onclick="openDirectWhatsApp('Hello Valli Raj Diagnostics')" class="bg-whatsapp-500 text-slate-950 font-bold px-4 py-2.5 rounded-xl text-xs flex items-center gap-2 hover:bg-whatsapp-400 transition">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Open WhatsApp Chat
+                    </button>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-slate-800 text-center text-xs text-slate-500">
+                &copy; 2026 Valli Raj Diagnostic Center. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // =========================================================================
+        // LAB CONFIGURATION - UPDATE THIS PHONE NUMBER TO YOUR LAB'S WHATSAPP NUMBER
+        // (Include country code without '+' sign e.g., "919876543210")
+        // =========================================================================
+        const LAB_WHATSAPP_NUMBER = "917075494119";
+
+        // Mobile Menu Toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Address Toggle
+        function toggleHomeAddress() {
+            const checkbox = document.getElementById('home-sample-checkbox');
+            const addressBox = document.getElementById('home-address-container');
+            if (checkbox.checked) {
+                addressBox.classList.remove('hidden');
+            } else {
+                addressBox.classList.add('hidden');
+            }
+        }
+
+        // Open Direct Custom WhatsApp Link
+        function openDirectWhatsApp(customText) {
+            const encodedText = encodeURIComponent(customText);
+            const whatsappUrl = `https://wa.me/${LAB_WHATSAPP_NUMBER}?text=${encodedText}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // Quick Hero Form WhatsApp Handler
+        function handleQuickBookingWhatsApp(e) {
+            e.preventDefault();
+            const name = document.getElementById('hero-name').value.trim();
+            const phone = document.getElementById('hero-phone').value.trim();
+            const service = document.getElementById('hero-service').value;
+
+            const message = `*VALLI RAJ DIAGNOSTIC CENTER - QUICK BOOKING REQUEST*\n\n` +
+                            `👤 *Name:* ${name}\n` +
+                            `📞 *Phone:* ${phone}\n` +
+                            `🔬 *Requested Test/Package:* ${service}\n\n` +
+                            `_Please confirm slot availability._`;
+
+            openDirectWhatsApp(message);
+        }
+
+        // Main Appointment Form WhatsApp Handler
+        function handleMainBookingWhatsApp(e) {
+            e.preventDefault();
+            const name = document.getElementById('booking-name').value.trim();
+            const phone = document.getElementById('booking-phone').value.trim();
+            const service = document.getElementById('booking-service').value;
+            const date = document.getElementById('booking-date').value;
+            const time = document.getElementById('booking-time').value;
+            const notes = document.getElementById('booking-notes').value.trim();
+            const isHomeCollection = document.getElementById('home-sample-checkbox').checked;
+            const address = document.getElementById('home-address').value.trim();
+
+            let collectionTypeText = isHomeCollection ? "🏠 *Home Sample Collection*" : "🏥 *Visiting Diagnostic Center*";
+
+            let message = `*VALLI RAJ DIAGNOSTIC CENTER - BOOKING APPOINTMENT*\n` +
+                            `------------------------------------------\n` +
+                            `👤 *Patient Name:* ${name}\n` +
+                            `📞 *Phone Number:* ${phone}\n` +
+                            `🧪 *Test / Package:* ${service}\n` +
+                            `📅 *Preferred Date:* ${date}\n` +
+                            `⏰ *Time Slot:* ${time}\n` +
+                            `📍 *Collection Mode:* ${collectionTypeText}\n`;
+
+            if (isHomeCollection && address) {
+                message += `🏠 *Address:* ${address}\n`;
+            }
+
+            if (notes) {
+                message += `📝 *Notes:* ${notes}\n`;
+            }
+
+            message += `------------------------------------------\n_Sent via Online Appointment Portal_`;
+
+            openDirectWhatsApp(message);
+        }
+
+        // Test Filter
+        function setFilter(category) {
+            const cards = document.querySelectorAll('.test-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-medical-700', 'text-white', 'shadow-md');
+                btn.classList.add('bg-white', 'text-slate-700');
+            });
+
+            event.currentTarget.classList.remove('bg-white', 'text-slate-700');
+            event.currentTarget.classList.add('bg-medical-700', 'text-white', 'shadow-md');
+
+            cards.forEach(card => {
+                const cardCat = card.getAttribute('data-category');
+                if (category === 'all' || cardCat === category) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Test Search
+        function filterTests() {
+            const query = document.getElementById('test-search').value.toLowerCase();
+            const cards = document.querySelectorAll('.test-card');
+
+            cards.forEach(card => {
+                const testName = card.getAttribute('data-name').toLowerCase();
+                if (testName.includes(query)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Report Search Simulation
+        function handleReportSearch(e) {
+            e.preventDefault();
+            const id = document.getElementById('portal-id').value;
+            const text = `Hi, I am looking for the diagnostic report for Sample ID / Mobile: ${id}`;
+            openDirectWhatsApp(text);
+        }
+    </script>
+</body>
+</html>
